@@ -193,7 +193,7 @@ button {
   .score {
     margin-left: 10%;
     margin-right: 10%;
-    font-size: 10px;
+    font-size: 8px;
   }
 
   .choices {
@@ -206,7 +206,7 @@ button {
   }
 
   .result {
-    font-size: 10px;
+    font-size: 8px;
   }
 
   button {
