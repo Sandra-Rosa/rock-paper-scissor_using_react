@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import girl from './images/girl.png';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" >
+      <span className="nav">Sandra Rosa Antony</span>
+      <div className="main">
+        <img src={girl} className='girl' alt="logo" />
+          <span className="Heading">
+            Rock-Paper-Scissors
+          </span>
+          
+    </div>
     </div>
   );
 }
