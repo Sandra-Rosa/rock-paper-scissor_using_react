@@ -4,15 +4,9 @@
 }
 
 .App {
-  
   overflow-x: hidden;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 .nav {
   font-family: 'Allison';
@@ -28,6 +22,7 @@
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  align-self: center;
   justify-content: center;
 }
 
@@ -36,4 +31,72 @@
   width: 30vw;
   height: auto;
 }
- 
+
+.Heading {
+  font-family: 'Bowlby One SC', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 100px;
+   margin-top: 20%;
+  color: #FF1212;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: stretch;
+  justify-content: space-around;
+  width:30vw;
+  height:auto;
+}
+
+.button-choice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+button {
+  appearance: none;
+  background-color:#FF1212;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-family: 'BioRhyme Expanded';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 20px;
+  border-radius: 12px;
+  font-size: 14px;
+  padding: 16px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.score {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'BioRhyme Expanded';
+  font-style: normal;
+  font-weight: 400;
+  color:#DF2C29;
+}
+.result{
+  display:flex;
+   flex-direction:column;
+   align-self: center;
+   align-items: center;
+   font-family: 'BioRhyme Expanded';
+  font-style: normal;
+  font-weight: 400;
+  color:#DF2C29;
+}
+.hand{
+  width:280px;
+  height:auto
+}
