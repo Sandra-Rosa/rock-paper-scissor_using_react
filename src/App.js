@@ -74,8 +74,8 @@ function App() {
           </span>
           <span>   </span>
           <div className='score'>
-            <span>User Points: {userPoints} </span>
-            <span>Computer Points: {computerPoints} </span>
+            <span>User: {userPoints} </span>
+            <span>Computer: {computerPoints} </span>
           </div>
           <br></br>
           <div className='choices'>
