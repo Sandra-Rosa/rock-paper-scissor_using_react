@@ -7,6 +7,10 @@
   overflow-x: hidden;
 }
 
+* {
+
+  box-sizing: border-box;
+}
 
 .nav {
   font-family: 'Allison';
@@ -20,7 +24,7 @@
 
 .main {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   align-items: center;
   align-self: center;
   justify-content: center;
@@ -33,12 +37,14 @@
 }
 
 .Heading {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
   font-family: 'Bowlby One SC', cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 64px;
-  line-height: 100px;
-   margin-top: 20%;
   color: #FF1212;
 }
 
@@ -47,16 +53,15 @@
   display: flex;
   flex-direction: column;
   align-self: center;
-  align-items: stretch;
-  justify-content: space-around;
-  width:30vw;
-  height:auto;
+  align-items: center;
+  margin-left: 10%;
+  justify-content: space-evenly;
 }
 
 
 button {
   appearance: none;
-  background-color:#FF1212;
+  background-color: #FF1212;
   border: none;
   outline: none;
   color: #ffffff;
@@ -79,31 +84,132 @@ button {
   font-family: 'BioRhyme Expanded';
   font-style: normal;
   font-weight: 400;
-  color:#DF2C29;
+  color: #DF2C29;
 }
-.result{
-  display:flex;
-   flex-direction:column;
-   align-self: center;
-   align-items: center;
-   font-family: 'BioRhyme Expanded';
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  font-family: 'BioRhyme Expanded';
   font-style: normal;
   font-weight: 400;
-  color:#DF2C29;
+  color: #DF2C29;
 }
-.hand{
-  width:200px;
-  height:auto
+
+.hand {
+  width: 200px;
+  height: auto
 }
-.choices{
-  display:flex;
+
+.choices {
+  display: flex;
   flex-direction: row;
   align-items: center;
   align-self: center;
+  justify-content: center;
 }
-.rock .paper .scissor{
-  display:flex;
+
+.rock .paper .scissor {
+  display: flex;
   flex-direction: column;
   align-items: center;
   align-self: center;
+  justify-content: center;
+}
+
+@media screen and (max-width:900px) {
+  .App {
+    overflow: hidden;
+    max-width: fit-content;
+  }
+
+  .content {
+    align-self: center;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .choices {
+    margin-left: 15%;
+  }
+
+  .Heading {
+    font-size: 48px;
+  }
+
+  .girl {
+    width: 80vw;
+    height: auto;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .nav {
+    font-size: 25px;
+  }
+
+  .Heading {
+    font-size: 28px;
+  }
+
+  .content {
+    margin-left: 10%;
+    width: min-content;
+  }
+
+  .score {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 15px;
+  }
+
+  .choices {
+    margin-right: 10%;
+  }
+
+  .hand {
+    width: 150px;
+    height: auto;
+  }
+
+  .result {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .nav {
+    font-size: 20px;
+  }
+
+  .Heading {
+    font-size: 20px;
+  }
+
+  .score {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 10px;
+  }
+
+  .choices {
+    margin-right: 10%;
+  }
+
+  .hand {
+    width: 100px;
+    height: auto;
+  }
+
+  .result {
+    font-size: 10px;
+  }
+
+  button {
+    font-size: 10px;
+  }
 }

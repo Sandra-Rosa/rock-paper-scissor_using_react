@@ -16,7 +16,7 @@ function App() {
 
   const choices = ['rock', 'paper', 'scissors']
   const handleClick = (value) => {
-    setUserChoice(value)    
+    setUserChoice(value)
     generateComputerChoice()
   }
 
@@ -37,7 +37,7 @@ function App() {
         const updatedUserPoints = userPoints + 1
         setUserPoints(updatedUserPoints)
         setTurnResult('User gets the point!')
-        if (updatedUserPoints === 5){
+        if (updatedUserPoints === 5) {
           setResult('User Wins🤩')
           const gameOff = true
           setGameOver(gameOff)
@@ -98,10 +98,10 @@ function App() {
             <span>Final Result: {result} </span>
           </div>
           <div className='button-div'>
-        {gameOver && 
-          <button className='button' onClick={() => reset()}>Restart Game?</button>
-        }
-      </div>
+            {gameOver &&
+              <button className='button' onClick={() => reset()}>Restart Game</button>
+            }
+          </div>
         </div>
       </div>
     </div>
