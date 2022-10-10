@@ -1,8 +1,3 @@
-import girl from './images/girl.png';
-import rock from './images/rock.png'
-import paper from './images/paper.png'
-import scissor from './images/scissors.png'
-
 import './App.css';
 import React, { useState, useEffect } from 'react';
 function App() {
@@ -44,7 +39,7 @@ function App() {
         }
       }
 
-      
+
       if (comboMoves === 'paperscissors' || comboMoves === 'scissorsrock' || comboMoves === 'rockpaper') {
         // computerPoints.current += 1
         const updatedComputerPoints = computerPoints + 1
@@ -66,9 +61,9 @@ function App() {
 
   return (
     <div className="App" >
-      <span className="nav">Sandra Rosa Antony</span>
+       <span className="nav">Sandra Rosa Antony</span>
       <div className="main">
-        <img src={girl} className='girl' alt="logo" />
+        <img src="/assets/home/girl.webp" className='girl' alt="logo" />
         <div classname='content'>
           <span className="Heading">
             Rock-Paper-Scissors
@@ -81,15 +76,15 @@ function App() {
           <br></br>
           <div className='choices'>
             <div className='rock'>
-              <img className='hand' src={rock}></img>
+              <img className='hand' src="/assets/elements/rock.webp"></img>
               <button onClick={() => handleClick('rock')} disabled={gameOver}>Rock</button>
             </div>
             <div className="paper">
-              <img className='hand' src={paper}></img>
+              <img className='hand' src="/assets/elements/paper.webp"></img>
               <button onClick={() => handleClick('paper')} disabled={gameOver}>Paper</button>
             </div>
             <div className='scissor'>
-              <img className='hand' src={scissor}></img>
+              <img className='hand' src="/assets/elements/scissors.webp"></img>
               <button onClick={() => handleClick('scissors')} disabled={gameOver}>Scissors</button>
             </div>
           </div>
