@@ -44,6 +44,7 @@ function App() {
         }
       }
 
+      
       if (comboMoves === 'paperscissors' || comboMoves === 'scissorsrock' || comboMoves === 'rockpaper') {
         // computerPoints.current += 1
         const updatedComputerPoints = computerPoints + 1
